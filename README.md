@@ -6,4 +6,4 @@ A simple benchmark for blog post
 * don't forget to chmod +x run
 
 ### running benchmarks
-`$ sh run <regex for patterns to run>`
+`$ sh run <regex of class names to run>`
