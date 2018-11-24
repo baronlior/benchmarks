@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+
+# not thread-safe
+mvn clean package
+
+# -f 1                 single fork, aka "trial"
+# -wi 5                "warm" cycles
+# -i 5                 iterations
+# -r 3s                each test iteration is bound to 3 seconds
+# aggressiveOpts       do all optimizations ASAP - hopefully all within the warm up phase
+# $1                   Regex for class names to run
+java -jar target/benchmarks.jar -f 1 -wi 5 -i 5 -r 3s -jvmArgs '-server -XX:+AggressiveOpts' $1
+
