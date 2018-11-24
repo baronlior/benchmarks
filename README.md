@@ -1,9 +1,9 @@
 A simple benchmark for blog post
 
 ### Installation
-git clone
+* git clone
 
-don't forget to chmod +x run
+* don't forget to chmod +x run
 
 ### running benchmarks
-sh run `<regex for patterns to run>`
+`$ sh run <regex for patterns to run>`
